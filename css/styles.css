@@ -1,0 +1,159 @@
+/* Color Palette 
+Misty Rose #FFE4E1
+Levander Blush #FFF0F5
+Light Salmon #FFA07A
+*/
+
+/* Global styles
+--------------------------- */
+body {
+    font-family: 'Avenir Next';
+    background: #FFF0F5;
+    color: black;
+    margin: 0;
+}
+h3 {
+    margin: 20px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Text and headers
+--------------------------- */
+h2 {
+    font-size: 29px;
+    font-family: 'Avenir Next';
+    font-weight: 400;
+    color: black;
+}
+h3 {
+    color: black;
+}
+a {
+   font-family: 'Avenir Next';
+   color: black;
+}
+a:hover {
+    text-decoration: none;
+    }
+.content-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px;
+    overflow: auto;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.col-wide {
+    width: 70%;
+    float: left;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #FFF0F5;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Header and Footer */
+header, footer {
+     background: #FFE4E1;
+     color: black;
+}
+
+/* Footer*/
+footer {
+    text-align: center;
+}
+.contact-info a {
+    background: #FFE4E1;
+    padding: 15px;
+}
+
+/* Header */
+.profile-img {
+    border-radius: 50%;
+}
+h1, header h2, footer h2{
+    margin-top: 0;
+    font-family: 'Avenir Next';
+    font-weight: 250;
+    background: #FFE4E1;
+    color: black;
+}
+header{
+  margin: 0;
+}
+h1 {
+    font-size: 60px;
+}
+h3 ~ p {
+    margin-left: 40px;
+}
+
+.download {
+  position: absolute;
+  bottom: 30;
+  right: 0;
+}
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: #FFF0F5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+              url(../images/thehague.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+

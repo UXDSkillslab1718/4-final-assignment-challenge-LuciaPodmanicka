@@ -7,7 +7,6 @@
 
 */
 
-
 /* Global styles */
 
 html {
@@ -91,6 +90,35 @@ nav a {
     font-weight: 300;
 }
 
+ul {
+    margin: 0;
+}
+
+.drop li > ul {
+    display: none;
+    list-style: none;
+}
+
+.drop li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -40%;
+    width: 150%;
+    cursor: pointer;
+}
+
+.drop li:hover > ul li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: white;
+    box-shadow: 3px 3px 3px 3px lightgray;
+}
+
+.dropdown {
+    text-align: center;
+}
+
 /* Header & Footer styles */
 header {
     background: #DFEEF0;
@@ -118,6 +146,13 @@ h1, h2 {
     margin: 0;
 }
 
+
+.header {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
 .intro {
     background: white;
     padding-top: 15px;
@@ -135,7 +170,6 @@ h1, h2 {
 }
 
 /* Footer*/
-
 .footer { 
     color: black;
     font-weight: 300;

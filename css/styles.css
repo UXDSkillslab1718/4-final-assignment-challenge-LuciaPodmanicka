@@ -1,22 +1,74 @@
-/* Color Palette 
-Misty Rose #FFE4E1
-Levander Blush #FFF0F5
-Light Salmon #FFA07A
+/* Colour Palette
+
+#C69F73 - camel
+#003B36 - dark green
+#91A69D - light green
+#DFEEF0 - light blue
+
 */
+
 
 /* Global styles
 --------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    font-family: 'Avenir Next';
-    background: #FFF0F5;
-    color: black;
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
+
 h3 {
     margin: 20px;
 }
 .uppercase {
     text-transform: uppercase;
+}
+
+/* toto je meno, stuent a about me, potom nazov projektu a jeho description v projects */
+.col-wide {
+    width: 50%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 85px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Playfair Display", sans-serif;
+    margin-top: 0;
+}
+
+/* Content wrap header, Content wrap, Content wrap footer */
+.content-wrap-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    overflow: auto;
+}
+
+.content-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    overflow: auto;
+} 
+
+.content-wrap-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    overflow: auto;
 }
 
 /* Text and headers
@@ -37,12 +89,7 @@ a {
 a:hover {
     text-decoration: none;
     }
-.content-wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 70px;
-    overflow: auto;
-}
+
 
 .col-narrow {
     width: 30%;
@@ -55,13 +102,20 @@ a:hover {
     float: left;
 }
 
-/* Download button */
+/* Download PDF button */
 .btn {
-  text-decoration: none;
-  background: #FFF0F5;
-  color: black;
-  padding: 10px;
-  display: inline-block;
+    text-decoration: none;
+    background: #003B36;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* Header and Footer */
@@ -80,9 +134,26 @@ footer {
 }
 
 /* Header */
-.profile-img {
-    border-radius: 50%;
+header {
+    padding-top: 50px;
+    position: relative;
 }
+
+.intro {
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid black 1px;
+}
+
+.profile-image {
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 306px;
+    height: 308px;
+}
+
 h1, header h2, footer h2{
     margin-top: 0;
     font-family: 'Avenir Next';
@@ -109,18 +180,19 @@ h3 ~ p {
 /* Navigation
 -------------------------*/
 nav {
-  text-align: center;
-  background: #FFF0F5;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    text-align: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: -33px;
 }
+
 nav a {
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 500;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
 

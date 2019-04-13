@@ -102,12 +102,17 @@ footer {
     color: black;
 }
 
+#about {
+    color: black;
+    background: linear-gradient(rgba(223, 238, 240, 0.5), rgba(223, 238, 240, 0.5)), url(../images/education.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
 /* Header */
 header {
     padding-top: 50px;
     position: relative;
 }
-
 
 h1, h2 {
     margin: 0;
@@ -152,6 +157,25 @@ h1, h2 {
     right: 0;
 }
 
+/* Work Experience */
+.work {
+    background: white;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+.job-description {
+    float: right;
+    width: 50%;
+    margin-top: -38px;
+}
+
 /* Education */ 
 .education {
     background: linear-gradient(rgba(223, 238, 240, 0.5), rgba(223, 238, 240, 0.5)), url(../images/education.jpg) no-repeat fixed;
@@ -162,8 +186,7 @@ p + h3 {
     margin-top: 30px;
 } 
 
-/* Media Queries
--------------------------*/
+/* Media Queries */
 @media (min-width: 900px) {
   .col-narrow {
     width: 50%;
@@ -180,7 +203,7 @@ p + h3 {
   header {
     text-align: center;
   }
-  .profile-img {
+  .profile-imgage {
     width: 200px;
   }
 }

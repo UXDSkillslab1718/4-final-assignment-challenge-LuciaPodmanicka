@@ -220,11 +220,42 @@ p + h3 {
     margin-top: 30px;
 } 
 
+/* School projects */
+.content-wrap-projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    overflow: auto;
+}
+
+.project-image {
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 306px;
+    height: 308px;
+}
+
+/* Visual skills */
+
+/* Design and creativity */
+.designandcreativity {
+    background: white;
+}
+
+/* Bespoke Design */
+.notebook {
+    background: linear-gradient(rgba(223, 238, 240, 0.5), rgba(223, 238, 240, 0.5)), url(../images/notebook.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
 /* Media Queries */
 @media (min-width: 900px) {
   .col-narrow {
     width: 50%;
-  }
+  }  
+    
   .col-wide {
     width: 50%;
     float: right;

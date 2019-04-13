@@ -1,14 +1,11 @@
 /* Colour Palette
-
 #C69F73 - camel
 #003B36 - dark green
 #91A69D - light green
 #DFEEF0 - light blue
-
 */
 
 /* Global styles */
-
 html {
     box-sizing: border-box;
 }
@@ -238,10 +235,37 @@ p + h3 {
 }
 
 /* Visual skills */
+.visualskills-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.visualskills-image {
+    width: 80%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 /* Design and creativity */
 .designandcreativity {
     background: white;
+}
+
+.designandcreativity-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.designandcreativity-image {
+    width: 80%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* Bespoke Design */

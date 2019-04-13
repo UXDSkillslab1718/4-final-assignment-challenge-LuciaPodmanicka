@@ -8,8 +8,7 @@
 */
 
 
-/* Global styles
---------------------------- */
+/* Global styles */
 
 html {
     box-sizing: border-box;
@@ -32,10 +31,6 @@ h1 {
     font-family: "Playfair Display", sans-serif;
 }
 
-h3 {
-    margin: 20px;
-}
-
 a {
     color: black;
     text-decoration: none;
@@ -55,15 +50,6 @@ a:hover {
     font-weight: 300;
     font-family: "Playfair Display", sans-serif;
     margin-top: 0;
-}
-
-/* toto je meno, stuent a about me, potom nazov projektu a jeho description v projects */
-.col-wide {
-    width: 50%;
-    float: right;
-    margin-right: 50px;
-    margin-top: 85px;
-    text-align: center;
 }
 
 /* Content wrap header, Content wrap, Content wrap footer */
@@ -88,64 +74,43 @@ a:hover {
     overflow: auto;
 }
 
-/* Text and headers
---------------------------- */
-h2 {
-    font-size: 29px;
-    font-family: 'Avenir Next';
-    font-weight: 400;
-    color: black;
-}
-h3 {
-    color: black;
+/* Navigation */
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: -33px;
 }
 
-.col-narrow {
-    width: 30%;
-    float: left;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-.col-wide {
-    width: 70%;
-    float: left;
-}
-
-/* Download PDF button */
-.btn {
-    text-decoration: none;
-    background: #003B36;
-    color: white;
-    padding: 10px;
+nav a {
     display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
     font-weight: 300;
 }
 
-.download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+/* Header & Footer styles */
+header {
+    background: #DFEEF0;
 }
 
-/* Header and Footer */
-header, footer {
-     background: #FFE4E1;
-     color: black;
-}
-
-/* Footer*/
 footer {
+    background: #DFEEF0;
     text-align: center;
-}
-.contact-info a {
-    background: #FFE4E1;
-    padding: 15px;
+    color: black;
 }
 
 /* Header */
 header {
     padding-top: 50px;
     position: relative;
+}
+
+
+h1, h2 {
+    margin: 0;
 }
 
 .intro {
@@ -164,52 +129,34 @@ header {
     border-radius: 50%;
 }
 
-h1, header h2, footer h2{
-    margin-top: 0;
-    font-family: 'Avenir Next';
-    font-weight: 250;
-    background: #FFE4E1;
+/* Footer*/
+
+.footer { 
     color: black;
-}
-header{
-  margin: 0;
-}
-
-h3 ~ p {
-    margin-left: 40px;
-}
-
-.download {
-  position: absolute;
-  bottom: 30;
-  right: 0;
-}
-
-/* Navigation
--------------------------*/
-nav {
-    text-align: center;
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: -33px;
-}
-
-nav a {
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: 300;
 }
 
+/* Download PDF button */
+.btn {
+    text-decoration: none;
+    background: #003B36;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 300;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 /* Education */ 
 .education {
     background: linear-gradient(rgba(223, 238, 240, 0.5), rgba(223, 238, 240, 0.5)), url(../images/education.jpg) no-repeat fixed;
     background-size: cover;
 }
-
 
 p + h3 {
     margin-top: 30px;
@@ -219,13 +166,14 @@ p + h3 {
 -------------------------*/
 @media (min-width: 900px) {
   .col-narrow {
-    width: 30%;
-    float: left;
+    width: 50%;
   }
   .col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
+    width: 50%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 85px;
+    text-align: center;
   }
 }
 @media (max-width: 899px){
